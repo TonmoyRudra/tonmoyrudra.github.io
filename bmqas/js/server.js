@@ -1,0 +1,15 @@
+var express = require('express');
+var app = express();
+var path = require('path');
+var fs = require('fs');
+
+// __dirname will use the current path from where you run this file 
+app.use(express.static(__dirname));
+app.use(express.static(path.join(__dirname, '../index.html')));
+
+app.get("/",(req, res) => {
+
+});
+
+app.listen(8000);
+console.log('Listening on port 8000');
