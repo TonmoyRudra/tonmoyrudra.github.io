@@ -1481,7 +1481,7 @@ span.profile {
     padding-left: 7px;
 }
 .logo a {
-    font-size: 1em;
+    font-size: .7em
 }
 .banner-section {
     min-height: 316px;
@@ -1692,9 +1692,15 @@ h2.tittle {
 }
 }
 
-@media(max-width:375px){
+@media(max-width:374px){
 .test {
   padding: 2em 0 8em;
+}
+
+.navbar-brand {
+    padding: 2px 15px;
+    padding-right: 0px;
+    padding-left: 7px;
 }
 }
 @media(max-width:320px){
