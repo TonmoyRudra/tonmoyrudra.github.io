@@ -21,8 +21,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<script type="text/javascript" src="js/numscroller-1.0.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 	<!--js-->
 	<link href="css/font-awesome.css" rel="stylesheet">
+	
+
 </head>
 
 <body>
@@ -36,7 +39,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 				<div class="detail">
 					<ul>
-						<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i> +880 1700 15 22 56</li>
+						<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i> +880 1701 64 48 79</li>
 						<li><i class="glyphicon glyphicon-time" aria-hidden="true"></i> Sun-Thurs 10:00 am to 8:00 pm </li>
 					</ul>
 				</div>
@@ -64,7 +67,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 							<nav class="link-effect-4" id="link-effect-4">
 								<ul class="nav navbar-nav">
-									<li ><a href="index.html" data-hover="Home">Home </a></li>
+									<li><a href="index.html" data-hover="Home">Home </a></li>
 									<li><a data-hover="Services" href="services.html">Services</a></li>
 									<li class="active"><a data-hover="Services" href="apps.html">Apps</a></li>
 									<li><a href="about.html" data-hover="About">About Us</a></li>
@@ -111,7 +114,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 			</div>
 		</div>
-		
+
 		<!--why choose us-->
 		<div class="why">
 			<div class="container">
@@ -215,15 +218,38 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 					<div class="clearfix"></div>
 				</div>
-				<h4 class="appsFooterNote">*Please contact us if you would like to receive more details on our Apps or if you would like to engage us for any App development opportunity</h4>
+				<h4 class="appsFooterNote">*Please contact us if you would like to receive more details on our Apps or if you would like to engage us for any App
+					development opportunity</h4>
 			</div>
 		</div>
 		<!--why choose us-->
+
+		<!--our Client-->
+		<div class="our-client">
+			<div class="container">
+				<center><h2 style="margin-bottom: 20px;">Our Client</h2></center>
+				<section class="customer-logos slider">
+					<div class="slide"><img src="images/client1.png"></div>
+					<div class="slide"><img src="images/client2.png"></div>
+					<div class="slide"><img src="images/client3.png"></div>
+					<div class="slide"><img src="images/client4.png"></div>
+					<div class="slide"><img src="images/client1.png"></div>
+					<div class="slide"><img src="images/client2.png"></div>
+					<div class="slide"><img src="images/client3.png"></div>
+					<div class="slide"><img src="images/client4.png"></div>
+					
+
+				</section>
+			</div>
+		</div>
+
+
+		<!--our Client-->
 	</div>
 
 
 	<!---footer -->
-<div class="footer-section">
+	<div class="footer-section">
 		<div class="container">
 			<div class="col-md-3 footer-grid">
 				<h4>Newsletter</h4>
@@ -264,7 +290,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<p><i class="glyphicon glyphicon-home" aria-hidden="true"></i>53, Purana Paltan (2nd Floor),</p>
 				<p>Dhaka, 1000, BD</p>
 				<p><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:example@mail.com"> websales@Bengal Mobile QA Solution.com</a></p>
-				<p><i class="glyphicon glyphicon-phone" aria-hidden="true"></i>Telephone : +880 1700 15 22 56</p>
+				<p><i class="glyphicon glyphicon-phone" aria-hidden="true"></i>Telephone : +880 1701 64 48 79</p>
 
 
 			</div>
@@ -293,7 +319,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<span class="fa fa-rss"></span>
 					</a>
 				</div>
-				<div class="col-md-12" style="    margin-top: 55px;"> 
+				<div class="col-md-12" style="    margin-top: 55px;">
 					<img src="images/member-basis.jpg" class="img-responsive" alt="/">
 				</div>
 			</div>
@@ -309,5 +335,31 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 	<!---copy-->
 </body>
+
+<script>
+	$(document).ready(function () {
+		$('.customer-logos').slick({
+			slidesToShow: 6,
+			slidesToScroll: 1,
+			autoplay: true,
+			autoplaySpeed: 1000,
+			arrows: false,
+			dots: false,
+			pauseOnHover: false,
+			responsive: [{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 4
+				}
+			}, {
+				breakpoint: 520,
+				settings: {
+					slidesToShow: 3
+				}
+			}]
+		});
+	});
+
+</script>
 
 </html>
