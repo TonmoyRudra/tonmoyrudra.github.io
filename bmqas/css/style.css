@@ -1,9 +1,4 @@
-/*--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
---*/
+
 .why-grid div {
     border-radius: 3%;
     background-color: #ebedfb;
@@ -370,7 +365,7 @@ h3.tittle {
 #login-dp{
     min-width: 250px;
     padding: 14px 14px 0;
-    overflow:hidden;
+    overflow:hidden; 
     background-color:rgba(255,255,255,.8);
 }
 #login-dp .help-block{
